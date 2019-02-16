@@ -27,7 +27,6 @@ int main (int argc, char *argv[]) {
     } else {
       a = a >> 1;
     }
-    n++;
     bits = binary_length(a);
     if (bits >= max_bits) {
       max_bits = bits;
@@ -35,13 +34,14 @@ int main (int argc, char *argv[]) {
     }
 
     printf("%10lu: %20llu  %s\n", n, a, binary64(a));
+    n++;
   }
 
   printf("\n%29s: %lu\n", "Start number", start_number);
   printf("%29s: %d\n", "Start bit length", start_bits);
   printf("%29s: %d\n", "Max bit length", max_bits);
   printf("%29s: after %d iterations\n", "Turning point", turning_point);
-  printf("%29s: %lu\n", "Total iterations", n);
+  printf("%29s: %lu\n", "Total iterations", n - 1);
 
   printf("\n");
 }
