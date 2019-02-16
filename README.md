@@ -16,27 +16,27 @@ Take the number 7 in (unsigned) binary:            111
 The least significant bit (LSB) is 1, left shift  1110
 and add 1:                                        1111
 Then add the first number to the answer:
-1st iteration:                                    1111
+                                                  1111
                                                +   111
-2nd iteration:                                 = 10110
+1st iteration:                                 = 10110
 Now the number has a 0 as the LSB, so we right shift one step.
-3rd iteration:                                    1011
+2nd iteration:                                    1011
 
 And continue until we have just 1 left:
-4th iteration:                                  100010
-5th iteration:                                   10001
-6th iteration:                                  110100
-7th iteration:                                   11010
-8th iteration:                                    1101
-9th iteration:                                  101000
-10th iteration:                                  10100
-11th iteration:                                   1010
-12th iteration:                                    101
-13th iteration:                                  10000
-14th iteration:                                   1000
-15th iteration:                                    100
-16th iteration:                                     10
-17th iteration:                                      1
+3rd iteration:                                  100010
+4th iteration:                                   10001
+5th iteration:                                  110100
+6th iteration:                                   11010
+7th iteration:                                    1101
+8th iteration:                                  101000
+9th iteration:                                   10100
+10th iteration:                                   1010
+11th iteration:                                    101
+12th iteration:                                  10000
+13th iteration:                                   1000
+14th iteration:                                    100
+15th iteration:                                     10
+16th iteration:                                      1
 ```
 
  
