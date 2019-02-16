@@ -41,3 +41,9 @@ And continue until we have just 1 left:
 
  
 
+Every addition can increase the length of the number by one, if a carry number slips all the way to the left side of the number. We have two additions, so it is possible our number length will increase by 2 if the LSB is 1. If the LSB is 0, then our number length decreases by 1. It can seems like there is a possibility to get a number that increases in length faster than it decreases, but all numbers with a fixed length will eventually run out of 1s, and our algorithm is steadily feading in 0s from the right, so the conjucture says eventually every positive number will end up as 1. It feels intuitively correct, but we lack a mathematical proof.
+
+## Build and run
+
+This is a c command line tool, so you need to have a c compiler installed. Download the src folder and run `make` inside it. The `collatz` command takes a large integer, or a binary string (starting with "0b"). Overflow will happen if it grows over 64 bits.
+
