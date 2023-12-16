@@ -4,7 +4,7 @@ Lab with [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture).
 The algorithm can be seen as a play with binary numbers, and goes like this:
 
 - 1 at least significant bit --> left shift, add previous number, add one
-- 0 at least significant bit --> right shift on step
+- 0 at least significant bit --> right shift one step
 - stop on 1
 
 The sequence will finally be a 1 followed by 0s, and then it goes down to 1 by repeating right shifts.
